@@ -23,3 +23,19 @@ for(i = 0; i < odd.length; i++){
     odd[i].style.backgroundColor = '#85DD75';
 }
 
+var itemList = document.querySelector('#items');
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+itemList.previousElementSibling.textContent = 'Previous';
+
+// Create a Div
+
+var newDiv = document.createElement('div');
+newDiv.className = 'new'
+newDiv.id = 'new1'
+newDiv.setAttribute('title', 'The Div')
+console.log(newDiv);
+var text = document.createTextNode('inserted text');
+newDiv.appendChild(text)
+var container = document.querySelector('#main');
+var h2 = document.querySelector('#main h2')
+container.insertBefore(newDiv, h2);
