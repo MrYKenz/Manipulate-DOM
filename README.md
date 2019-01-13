@@ -1,4 +1,3 @@
 "# Manipulate-DOM" 
 
-Testing
-
+Created for education purposes.
