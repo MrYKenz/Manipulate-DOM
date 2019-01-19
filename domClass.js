@@ -39,3 +39,22 @@ newDiv.appendChild(text)
 var container = document.querySelector('#main');
 var h2 = document.querySelector('#main h2')
 container.insertBefore(newDiv, h2);
+
+// EVENTS //
+
+// var button = document.getElementById('button').addEventListener('click', function(){
+//     console.log(123)
+//     alert(123)
+// });
+
+var button = document.getElementById('button').addEventListener('click', buttonClick);
+
+function buttonClick(e){
+    console.log('button clicked')
+    document.querySelector('#main-header').textContent = 'new title'
+    document.querySelector('#main-header').style.fontSize = '40px'
+    document.querySelector('#main-header').style.textAlign = 'center'
+    console.log(e.clientX, e.clientY) // client = window
+    console.log(e.offsetX, e.offsetY) // offset = element
+    console.log(e.ctrlKey, e.altKey)
+};
