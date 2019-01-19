@@ -3,6 +3,6 @@
 Created for education purposes.
 
 Change script tag to use the different JS files:
-'''HTML
+```HTML
  <script src="domClass.js"></script>
- '''
+```
